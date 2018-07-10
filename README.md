@@ -1,2 +1,3 @@
 # MyVision for Kotlin
-Adding Night Vision System for Minecraft. Cleaning code.
+The night vision plugin for spigot & bukkit server.
+It depends for Ruskit: https://github.com/RSCommunity/Ruskit

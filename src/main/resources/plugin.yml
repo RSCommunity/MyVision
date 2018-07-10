@@ -1,0 +1,5 @@
+name: myvision
+main: work.ruskonert.minecraft.myvision.MyVision
+author: ruskonert
+depend: [Ruskit]
+description: The night vision plugin

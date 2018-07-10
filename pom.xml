@@ -3,42 +3,33 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.reankr</groupId>
-    <artifactId>MyVision</artifactId>
+    <groupId>work.ruskonert.minecraft</groupId>
+    <artifactId>myvision</artifactId>
     <version>1.0-SNAPSHOT</version>
     <properties>
-        <kotlin.version>1.1.4-2</kotlin.version>
+        <kotlin.version>1.2.51</kotlin.version>
         <jdk.version>1.8</jdk.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
     <repositories>
         <repository>
-            <id>spigot-repo</id>
-            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+            <id>ruskonert-repo</id>
+            <url>https://dev.ruskonert.work/nexus/content/repositories/ruskonert-repo/</url>
         </repository>
     </repositories>
     <dependencies>
         <dependency>
+            <groupId>io.github.ruskonert</groupId>
+            <artifactId>intersound</artifactId>
+            <version>1.0.0</version>
+            <classifier>RELEASE</classifier>
+        </dependency>
+        <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
-            <version>1.11.2-R0.1-SNAPSHOT</version>
-            <scope>provided</scope>
+            <version>1.12.2-R0.1-SNAPSHOT</version>
         </dependency>
-        <dependency>
-            <groupId>org.bukkit</groupId>
-            <artifactId>bukkit</artifactId>
-            <version>1.11.2-R0.1-SNAPSHOT</version>
-            <scope>provided</scope>
-        </dependency>
-        <!--
-        <dependency>
-            <groupId>org.bukkit</groupId>
-            <artifactId>craftbukkit</artifactId>
-            <version>1.12-R0.1-SNAPSHOT</version>
-            <type>jar</type>
-        </dependency>
-        -->
         <dependency>
             <groupId>org.jetbrains.kotlin</groupId>
             <artifactId>kotlin-stdlib</artifactId>
@@ -47,7 +38,7 @@
     </dependencies>
     <build>
         <finalName>Rebukkit</finalName>
-        <sourceDirectory>${project.basedir}/src/main/</sourceDirectory>
+        <sourceDirectory>${project.basedir}/src/main/kotlin</sourceDirectory>
         <plugins>
             <plugin>
                 <groupId>org.jetbrains.kotlin</groupId>
